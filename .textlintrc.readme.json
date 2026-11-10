@@ -1,0 +1,15 @@
+{
+  "rules": {
+    "prh": {
+      "rulePaths": ["./prh.yml"]
+    },
+    "ja-space-between-half-and-full-width": {
+      "space": ["alphabets"],
+      "allows": ["ER図"]
+    },
+    "no-mix-dearu-desumasu": {
+      "preferInBody": "ですます",
+      "preferInList": "である"
+    }
+  }
+}

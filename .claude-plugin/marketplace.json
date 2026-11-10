@@ -1,0 +1,14 @@
+{
+  "name": "takeshi-plugins",
+  "owner": {
+    "name": "Takeshi Saito"
+  },
+  "description": "Skill plugins for Claude Code, GitHub Copilot CLI, and Codex CLI.",
+  "plugins": [
+    {
+      "name": "sdd",
+      "source": "./plugins/sdd",
+      "description": "Skills for spec-driven development (SDD): PRD, functional design, architecture, repository structure, glossary, and steering."
+    }
+  ]
+}

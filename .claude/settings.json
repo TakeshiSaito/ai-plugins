@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm ci)",
+      "Bash(npm run lint:text)",
+      "Bash(npm run lint:text:fix)"
+    ]
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$CLAUDE_PROJECT_DIR\"/.claude/hooks/textlint.sh",
+            "timeout": 120,
+            "statusMessage": "Running textlint..."
+          }
+        ]
+      }
+    ]
+  }
+}

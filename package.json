@@ -1,0 +1,15 @@
+{
+  "name": "ai-plugins",
+  "private": true,
+  "description": "Text lint for the documents in this repository",
+  "scripts": {
+    "lint:text": "textlint \"plugins/*/skills/**/*.md\" && textlint --config .textlintrc.readme.json README.md",
+    "lint:text:fix": "textlint --fix \"plugins/*/skills/**/*.md\"; textlint --fix --config .textlintrc.readme.json README.md"
+  },
+  "devDependencies": {
+    "textlint": "15.8.0",
+    "textlint-rule-ja-space-between-half-and-full-width": "3.0.4",
+    "textlint-rule-no-mix-dearu-desumasu": "6.0.4",
+    "textlint-rule-prh": "6.1.1"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "sdd",
+  "version": "0.1.0",
+  "description": "Skills for spec-driven development (SDD): PRD, functional design, architecture, repository structure, glossary, and steering.",
+  "author": {
+    "name": "Takeshi Saito"
+  },
+  "repository": "https://github.com/TakeshiSaito/ai-plugins",
+  "license": "MIT",
+  "keywords": ["sdd", "spec-driven-development", "skills"],
+  "skills": "./skills/"
+}

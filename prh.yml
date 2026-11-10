@@ -1,0 +1,42 @@
+# Preferred spellings for this repository. Add an entry whenever a new variant is found.
+version: 1
+rules:
+  - expected: スペック駆動開発
+    patterns:
+      - 仕様駆動開発
+      - SPEC駆動開発
+      - Spec駆動開発
+    specs:
+      - from: 仕様駆動開発で進める
+        to: スペック駆動開発で進める
+
+  # Write numeric ranges with a wave dash, e.g. 1〜2文 rather than 1-2文.
+  - expected: $1〜$2$3
+    pattern: /(\d+)-(\d+)(文|件|行|文字)/
+    specs:
+      - from: 1-2文で記述
+        to: 1〜2文で記述
+
+  - expected: 公開 API
+    patterns:
+      - 公開インターフェース
+      - 公開インタフェース
+    specs:
+      - from: 公開インターフェース（関数やメソッド）
+        to: 公開 API（関数やメソッド）
+
+  - expected: エラーハンドリング
+    patterns:
+      - エラーの扱い
+      - エラーの対応
+      - エラー処理
+    specs:
+      - from: エラーの扱いを決める
+        to: エラーハンドリングを決める
+
+  # Wrap Japanese text in full-width parentheses, e.g. P0（必須） rather than P0(必須).
+  - expected: （$1）
+    pattern: /\(([^()\n]*[ぁ-んァ-ヶ一-龠][^()\n]*)\)/
+    specs:
+      - from: P0(必須)
+        to: P0（必須）
