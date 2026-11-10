@@ -2,7 +2,7 @@
 
 [![textlint](https://github.com/TakeshiSaito/ai-plugins/actions/workflows/textlint.yml/badge.svg)](https://github.com/TakeshiSaito/ai-plugins/actions/workflows/textlint.yml)
 
-個人のAIプラグイン集
+個人の AI プラグイン集
 
 ## Plugins
 
